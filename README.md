@@ -1,5 +1,7 @@
 # Feedback Aggregation Tool
 
+Cloudflare assignment for the Product Manager Intern - Summer 2026 position. 
+
 A Cloudflare Workers-based tool that aggregates and analyzes product feedback from multiple sources (GitHub, Discord, Twitter, Email, Support Tickets, Forums) using AI-powered summarization.
 
 ## Features
