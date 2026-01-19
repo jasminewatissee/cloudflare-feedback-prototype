@@ -14,7 +14,7 @@
 		{
 			"binding": "DB",
 			"database_name": "feedback-db",
-			"database_id": "7a985d4b-d967-4866-9f98-f26f0555ab47"
+			"database_id": "YOUR_DATABASE_ID_HERE"
 		}
 	],
 	"ai": {
