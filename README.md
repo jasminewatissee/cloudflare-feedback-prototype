@@ -69,7 +69,7 @@ npx wrangler d1 execute feedback-db --file=schema.sql
 ### 3. Deploy Worker
 
 ```bash
-npm run deploy
+npx wrangler deploy
 ```
 
 ## Usage
@@ -78,12 +78,12 @@ npm run deploy
 
 Send feedback to your worker via webhooks:
 
-- **GitHub**: `POST https://your-worker.workers.dev/webhook/github`
-- **Discord**: `POST https://your-worker.workers.dev/webhook/discord`
-- **Twitter**: `POST https://your-worker.workers.dev/webhook/twitter`
-- **Email**: `POST https://your-worker.workers.dev/webhook/email`
-- **Support**: `POST https://your-worker.workers.dev/webhook/support`
-- **Forum**: `POST https://your-worker.workers.dev/webhook/forum`
+- **GitHub**: `POST /webhook/github`
+- **Discord**: `POST /webhook/discord`
+- **Twitter**: `POST /webhook/twitter`
+- **Email**: `POST /webhook/email`
+- **Support**: `POST /webhook/support`
+- **Forum**: `POST /webhook/forum`
 
 ### API Endpoints
 
@@ -93,10 +93,6 @@ Send feedback to your worker via webhooks:
 - `GET /api/stats` - Get statistics
 - `POST /api/aggregate` - Manually trigger aggregation (body: `{ "days": 7 }`)
 - `POST /api/summarize/:source` - Manually trigger summarization for a source
-
-### Dashboard
-
-Visit `https://your-worker.workers.dev/` to view the dashboard.
 
 ## Webhook Payload Formats
 
@@ -138,13 +134,10 @@ For other sources, send a JSON payload with:
 
 ```bash
 # Start local development server
-npm run dev
-
-# Run tests
-npm test
+npx wrangler dev
 
 # Deploy to production
-npm run deploy
+npx wrangler deploy
 ```
 
 ## Configuration
